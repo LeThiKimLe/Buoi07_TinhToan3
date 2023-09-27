@@ -58,5 +58,34 @@ namespace Buoi07_TinhToan3
             txtSo1.Focus();
             txtSo1.SelectAll();
         }
+
+
+        private void txtSo1_Leave(object sender, EventArgs e)
+        {
+            string input = txtSo1.Text;
+
+            // Kiểm tra xem chuỗi nhập vào có phải là số hay không
+            if (!double.TryParse(input, out _))
+            {
+                MessageBox.Show("Lỗi: Vui lòng chỉ nhập số!");
+                txtSo1.Focus();
+                txtSo1.SelectAll();
+            }
+        }
+       
+
+        private void txtSo2_Leave_1(object sender, EventArgs e)
+        {
+            string input = txtSo2.Text;
+
+            // Kiểm tra xem chuỗi nhập vào có phải là số hay không
+            if (!double.TryParse(input, out _))
+            {
+                MessageBox.Show("Lỗi: Vui lòng chỉ nhập số!");
+                txtSo2.Focus();
+                txtSo2.SelectAll();
+            }
+
+        }
     }
 }
