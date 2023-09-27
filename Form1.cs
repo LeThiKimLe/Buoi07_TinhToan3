@@ -46,5 +46,17 @@ namespace Buoi07_TinhToan3
             //Hiển thị kết quả lên trên ô kết quả
             txtKq.Text = kq.ToString();
         }
+
+        private void txtSo2_Click(object sender, EventArgs e)
+        {
+            txtSo2.Focus();
+            txtSo2.SelectAll();
+        }
+
+        private void txtSo1_Click(object sender, EventArgs e)
+        {
+            txtSo1.Focus();
+            txtSo1.SelectAll();
+        }
     }
 }
